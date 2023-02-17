@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from students.views import student_lists
+from teachers.views import teachers_list
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('college/student/list', student_lists),
+    path('college/teacher/list', teachers_list)
 ]
