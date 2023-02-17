@@ -18,8 +18,6 @@
         font-weight:bold;
         text-decoration:wavy;
       }
-
-          
     </style>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -31,11 +29,11 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
-              <a class="nav-link" href="#">Students List</a>
-              <a class="nav-link" href="#">Teachers List</a>
+              <a class="nav-link" href="{% url 'student-list' %}">Students List</a>
+              <a class="nav-link" href="{% url 'teacher-list' %}">Teachers List</a>
               <a class="nav-link" href="#">Sweepers List</a>
               <a class="nav-link" href="#">Gardeners</a>
-              <a class="nav-link" href="">Careers</a>
+              <a class="nav-link" href="#">Careers</a>
               <a class="nav-link" href="#">Contact</a>
             </div>
           </div>
