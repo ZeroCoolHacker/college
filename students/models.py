@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-CLASS = [
+CLASS_CHOICES = [
     ("ICS-P1", "ICS-Part1"),
     ("ICS-P2", "ICS-Part2"),
     ("M-P1", "MEDICAL-Part1"),
@@ -14,7 +14,7 @@ class Student(models.Model):
     first_name = models.TextField(max_length=30, null=False, blank=False)
     last_name = models.TextField(max_length=30, null=False, blank=False)
     date_of_birth = models.DateField(null=False, blank=False, auto_now_add=False, auto_now=False )
-    student_class = models.CharField(max_length=6, choices=CLASS)
+    student_class = models.CharField(max_length=6, choices=CLASS_CHOICES)
     roll_number = models.PositiveSmallIntegerField(default=1, blank=False, null=False, unique=True) 
     fee = models.BigIntegerField(blank=False, null=False)
     join = models.DateField(null=True, blank=True, auto_now_add=True)

@@ -19,6 +19,6 @@ from students.views import student_lists
 from teachers.views import teachers_list
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('college/student/list', student_lists),
-    path('college/teacher/list', teachers_list)
+    path('college/student/list', student_lists, name='student-list'),
+    path('college/teacher/list', teachers_list, name='teacher-list')
 ]

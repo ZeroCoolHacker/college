@@ -28,16 +28,16 @@
         </th>
         
         <td>
-          {{student.first_name}}
+          {{student.first_name|capfirst}}
         </td>
         <td>
-          {{student.last_name}}
+          {{student.last_name|capfirst}}
         </td>
         <td>
           {{student.student_class}}
         </td>
         <td>
-          {{student.date_of_birth}}
+          {{student.date_of_birth|date:"l d-m-Y"}}
         </td>
         <td>
           {{student.fee}}
